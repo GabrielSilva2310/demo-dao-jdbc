@@ -13,11 +13,14 @@ public class Program {
 		
 		Department obj=new Department(1, "Cars");
 		
-		Seller seller=new Seller(10, "Gabriel", "gabriel@gmail.com", new Date(), 5000.00, obj);
 		
-		SellerDao sd=DaoFactory.createdSellerDao();
+		
+		SellerDao sellerDao =DaoFactory.createdSellerDao();
+		Seller seller=sellerDao.FindById(3);
 		
 		System.out.println(seller);
+		
+		
 		
 
 	}
