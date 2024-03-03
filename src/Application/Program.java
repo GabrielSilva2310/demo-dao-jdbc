@@ -11,11 +11,8 @@ public class Program {
 
 	public static void main(String[] args) {
 		
-		Department obj=new Department(1, "Cars");
-		
-		
-		
 		SellerDao sellerDao =DaoFactory.createdSellerDao();
+		System.out.println("==== TEST 1: seller fyndById =====");
 		Seller seller=sellerDao.FindById(3);
 		
 		System.out.println(seller);
