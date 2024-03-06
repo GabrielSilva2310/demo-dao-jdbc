@@ -108,6 +108,7 @@ public class SellerDaoJDBC implements SellerDao {
 				throw new DbException("No Id deleted!");
 			}
 			
+			
 			}
 			
 			catch (SQLException e) {
