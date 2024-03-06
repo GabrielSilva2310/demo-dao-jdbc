@@ -45,7 +45,7 @@ public class Program2 {
 		departmentDao.deleteById(test);
 		System.out.println("Delete Completed");
 		
-		
+		sc.close();
 		
 		
 		
